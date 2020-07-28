@@ -4,8 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    
+    <div class="header">
+        <span class="h1">Weather Dashboard</span>
+      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3" id="search-bar">
+                <form>
+                    <div class ="row">
+                        <h3 class="searchbar" id="search-bar">Search for a City</h3>
+                                <div class="col-sm-2">
+                                    <input class="citysearcher" type="text" id="searchBar" placeholder="Enter City Here"/>
+              <!--<button type="submit" class="searchbutton" id="searchBtn"></button>-->
+                                    <!--<div class="col-sm-1">-->
+                                    <input type="image" class="searchbutton" id="searchBtn" src="assets/Magnifying Glass.jpeg" alt="Search">
+                                    <!--</div>-->
+                                </div>
+                    </div>                
+              <!--</button>-->
+                </form>  
+                <div class="col">
+                    Search history
+                    <div class = "search-history">
+                    </div>
+                </div>  
+            </div>    
+        </div>
+        <div class="weather-container">
+            <div class="col-9">
+                <div class="row">
+                    <div class="jumbotron col todays-info">
+                        <img class="icon">
+                            <p class="weather" id="weather"></p>
+                            <p class="temp"></p>
+                            <p class="humidity"></p>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+            <div class="row">
+                    <h2>5-Day Forecast</h2>
+                </div>
+
+                <br><br>
+
+                <div class="day1">
+                    <img class="icon1">
+                        <p class="weather1" id="weather1"></p>
+                        <p class="temp1"></p>
+                </div>
+
+                <br><br>
+
+                <div class="day2">
+                    <img class="icon2">
+                        <p class="weather2" id="weather2"></p>
+                        <p class="temp2"></p>
+                </div>
+
+                <br><br>
+
+                <div class="day3">
+                    <img class="icon3">
+                        <p class="weather3" id="weather3"></p>
+                        <p class="temp3"></p>
+                </div>        
+
+                <br><br>
+
+                <div class="day4">
+                    <img class="icon4">
+                        <p class="weather4" id="weather4"></p>
+                        <p class="temp4"></p>
+                </div>    
+
+                <br><br>
+
+                <div class="day5">    
+                    <img class="icon5">
+                        <p class="weather5" id="weather5"></p>
+                        <p class="temp5"></p>
+                </div>        
+
+        </div>
+    </div>      
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
