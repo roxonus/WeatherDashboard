@@ -1,1 +1,3 @@
 # WeatherDashboard
+![]assets/Weatherpic.png
+
