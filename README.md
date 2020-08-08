@@ -2,5 +2,5 @@
 https://roxonus.github.io/WeatherDashboard/.
 
 
-![]/assets/Weatherpic.png
+![](assets/Weatherpic.png)
 
