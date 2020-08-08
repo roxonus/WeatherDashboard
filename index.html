@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -15,83 +16,123 @@
         <div class="row">
             <div class="col-sm-3" id="search-bar">
                 <form>
-                    <div class ="row">
-                        <h3 class="searchbar" id="search-bar">Search for a City</h3>
-                                <div class="col-sm-2">
-                                    <input class="citysearcher" type="text" id="searchBar" placeholder="Enter City Here"/>
-              <!--<button type="submit" class="searchbutton" id="searchBtn"></button>-->
-                                    <!--<div class="col-sm-1">-->
-                                    <input type="image" class="searchbutton" id="searchBtn" src="assets/Magnifying Glass.jpeg" alt="Search">
-                                    <!--</div>-->
+                    <div class='row'>
+                        <div class='column'>
+                            <div class='container'>
+                                <div class='title'>
+                                    <h2>Search</h2>
                                 </div>
-                    </div>                
-              <!--</button>-->
+                                <div class='search'>
+                                    <input class='search-field' type='text' placeholder='Enter City Name' name='search'>
+                                    <button class='searchBtn' type='submit'><i class='fas fa-search'></i></button>
+                                </div>
+                            </div>
+                        </div>
                 </form>  
                 <div class="col">
                     Search history
-                    <div class = "search-history">
+                    <div class="search-history">
                     </div>
                 </div>  
             </div>    
         </div>
-        <div class="weather-container">
-            <div class="col-9">
-                <div class="row">
-                    <div class="jumbotron col todays-info">
-                        <img class="icon">
-                            <p class="weather" id="weather"></p>
-                            <p class="temp"></p>
-                            <p class="humidity"></p>
-                    </div>
-                </div>    
+    </div>    
+        
+
+        <div class="card" id="card">
+            <div class="card-content">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="jumbotron col todays-info">Todays Weather
+                            <h1 class="name"></h1>
+                            <h2 class="date"></h2>
+                            <img class="icon">
+                                <p class="weather" id="weather"></p>
+                                <p class="temp"></p>
+                                <p class="humidity"></p>
+                                <p class="windspeed"></p>
+                                <p class="uvindex"></p>
+                        </div>
+                    </div>    
+                </div>
             </div>
         </div>    
-            <div class="row">
-                    <h2>5-Day Forecast</h2>
-                </div>
+            
+               
+                    <div class="container">  
+                        <div class="row">
+                            <h2>5-Day Forecast</h2>
+                        </div>
+                    </div>
+                        
 
                 <br><br>
 
-                <div class="day1">
-                    <img class="icon1">
-                        <p class="weather1" id="weather1"></p>
-                        <p class="temp1"></p>
-                </div>
-
-                <br><br>
-
-                <div class="day2">
-                    <img class="icon2">
-                        <p class="weather2" id="weather2"></p>
-                        <p class="temp2"></p>
-                </div>
-
-                <br><br>
-
-                <div class="day3">
-                    <img class="icon3">
-                        <p class="weather3" id="weather3"></p>
-                        <p class="temp3"></p>
+                <div class="card" id="card">
+                    <div class="card-content">
+                        <div class="day1"></div>
+                            <img class="icon1">
+                                <p class="weather1" id="weather1"></p>
+                                <p class="temp1"></p>
+                                <p class="humidity1"></p>
+                        
+                    </div>
                 </div>        
 
                 <br><br>
 
-                <div class="day4">
-                    <img class="icon4">
-                        <p class="weather4" id="weather4"></p>
-                        <p class="temp4"></p>
+                <div class="card" id="card">
+                    <div class="card-content">
+                        <div class="day2"></div>
+                            <img class="icon2">
+                                <p class="weather2" id="weather2"></p>
+                                <p class="temp2"></p>
+                                <p class="humidity2"></p>
+                        
+                    </div>
                 </div>    
 
                 <br><br>
 
-                <div class="day5">    
-                    <img class="icon5">
-                        <p class="weather5" id="weather5"></p>
-                        <p class="temp5"></p>
-                </div>        
+                <div class="card" id="card">
+                    <div class="card-content">
+                        <div class="day3"></div>
+                            <img class="icon3">
+                                <p class="weather3" id="weather3"></p>
+                                <p class="temp3"></p>
+                                <p class="humidity3"></p>
+                        
+                    </div>
+                </div>                
 
-        </div>
-    </div>      
+                <br><br>
+
+                <div class="card" id="card">
+                    <div class="card-content">
+                        <div class="day4"></div>
+                            <img class="icon4">
+                            <p class="weather4" id="weather4"></p>
+                            <p class="temp4"></p>
+                            <p class="humidity4"></p>
+                        
+                    </div>
+                </div>            
+
+                <br><br>
+
+                <div class="card" id="card">
+                    <div class="card-content">
+                        <div class="day5"></div>    
+                            <img class="icon5">
+                                <p class="weather5" id="weather5"></p>
+                                <p class="temp5"></p>
+                                <p class="humidity5"></p>
+                        
+                    </div>
+                </div>               
+
+        
+         
 
 
 
@@ -99,7 +140,7 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="assets/script.js"></script>
 </body>

@@ -20,7 +20,7 @@ form {
     padding: 20px;
 }
 
-.citysearcher {
+.search-field {
     margin-bottom: 15px;
 
 }
@@ -29,7 +29,7 @@ form {
     margin-top: 15px;
 } 
 
-.searchbutton {
+.searchBtn {
     padding: 7px;
     margin: 5px;
     height: 50px;
